@@ -11,7 +11,7 @@ class App extends Component {
         <h1 className="text-center text-light">Auto Loan Calculator</h1>
         <div className="loan-form-container">
           
-          <LoanForm header='Get you instate quote now.'/>
+          <LoanForm header='Get an instant quote.'/>
           
         </div>
       </section>
