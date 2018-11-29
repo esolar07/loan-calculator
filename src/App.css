@@ -1,32 +1,75 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Anton|Roboto');
+
+/******************* 
+app variables 
+******************/
+:root{
+  --main-bg-color: 135deg, #1e5799 0%,#7db9e8 100%;
+  --form-border: 0 0 55px rgba(#000, #000, #000, .6);
+  --header-font: 'Anton', sans-serif;
+  --text-font: 'Roboto', sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+/*******************
+ app  base styles 
+******************/
+
+html,
+body{
+  width: 100%;
+  height: 100%;
+  box-sizing:border-box;
+  font-family: var(--text-font);
+  background-repeat: no-repeat;
+  background-image: linear-gradient(var(--main-bg-color)) ;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+*, *:before, *:after{
+  box-sizing:border-box;
 }
 
-.App-link {
-  color: #61dafb;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--header-font);
 }
+form{
+  margin: 0 auto;
+  width:250px;
+  text-align: left;
+  background: white;
+ }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*******************
+app layout styles 
+******************/
+
+ .l-loan-calculator{
+   margin: 0 auto;
+   padding-top: 50px;
+   width: 100%;
+   height: 100%;
+ }
+
+/*******************
+ app module styles 
+ ******************/
+
+
+ .loan-form-container{
+    margin: 50px auto 0;
+    padding: 20px 25px;
+    width: 350px;
+    height: 100%;
+    background: white;
+    border-radius: 10px;
+    box-shadow:0 0 15px black;
+ }
+
+.btn__container{
+  margin: 0 auto;
+  width: 94px;
 }
